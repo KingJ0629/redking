@@ -1,0 +1,30 @@
+{
+  "name": "hongbao",
+  "version": "0.0.1",
+  "description": "red king",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingJ0629/redking.git"
+  },
+  "keywords": [
+    "ele"
+  ],
+  "author": "Jin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingJ0629/redking/issues"
+  },
+  "homepage": "https://github.com/KingJ0629/redking#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11"
+  }
+}
