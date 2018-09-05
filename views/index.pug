@@ -1,5 +1,12 @@
 extends layout
-
+block cssscripts
+  link(rel='stylesheet', href='/stylesheets/index.css')
 block content
-  h1= title
-  p Welcome to #{title}
+
+  input#tel.inline.form-control(placeholder="手机号")
+  br
+  input#url.inline.form-control(placeholder="饿了么红包链接")
+  br
+  button#submit.btn.btn-default 确定
+
+  script(src='/javascripts/index.js')

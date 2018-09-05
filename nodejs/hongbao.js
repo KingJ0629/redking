@@ -1,16 +1,17 @@
-const input = require('./input');
 const db = require('./service');
 const puppeteer = require('./settings');
 
 // 引入两个输入参数
-var url = input.url;
-var userPhone = input.userPhone;
+var url;
+var userPhone;
 
 var notArray = [];// 用来存放排除的user的数组
 var userEntity //需要最大红包的人的手机号对应的cookie
 var luckyNumber; //最大红包数位置
 
-(async () => {
+exports.run = async function run(userPhone_, url_) {
+  url = url_;
+  userPhone = userPhone_;
 
   notArray.push(userPhone);
   luckyNumber = parseUrl(url)
@@ -28,8 +29,7 @@ var luckyNumber; //最大红包数位置
   } else {
     console.log('未授权的用户手机号，请联系管理员!');
   }
-  
-})();
+}
 
 // 贡献
 async function contribute() {
